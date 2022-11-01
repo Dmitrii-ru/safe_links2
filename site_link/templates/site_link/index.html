@@ -1,0 +1,17 @@
+{% extends 'site_link/base.html' %}
+
+{%block content%}
+
+<div class="safe">
+    <div class="safe_inside">
+        <div class="input_safe">
+            <form method="post" class="form_input_safe">
+                {%csrf_token%}
+                {{form}}
+                <button class="a_button" type="submit"> Вход </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

@@ -1,0 +1,267 @@
+:root {
+  --color-border: #235ad1;
+
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+a {
+    text-decoration:none;
+}
+
+.a_button {
+  text-decoration:none;
+  padding: 5px;
+  border: 1px ;
+  margin: 10px;
+  border-radius: 5%;
+  background: #749385;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-family: 'Stalinist One', cursive;
+}
+
+.a_button:hover {
+    transition: 1s;
+    background: #bcffed;
+-webkit-box-shadow: -3px -2px 21px 6px rgba(176, 176, 176, 1);
+-moz-box-shadow: -3px -2px 21px 6px rgba(176, 176, 176, 1);
+box-shadow: -3px -2px 21px 6px rgba(176, 176, 176, 1);
+    color: black;
+}
+
+.header {
+  width: 100%;
+  background: 	#d3d3d3;
+  height: 100px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Stalinist One', cursive;
+  text-align: center;
+  user-select: none;
+
+
+}
+.header_text{
+  font-family: 'Stalinist One', cursive;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+.header_logo{
+  display: flex;
+  align-items: center;
+
+}
+
+.header_logo  img{
+  height: 150px;
+}
+
+.header_button{
+  margin-right: 5px;
+}
+.safe {
+  align-items: center;
+  border: 3px solid silver;
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 75% ;
+  border-radius: 2%;
+  background: #EDEFEE;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+.safe_inside{
+  width: 85%;
+  height: 85%;
+  background: #EDEFEE;
+  border-radius: 2%;
+  border: 3px solid silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 5px 6px rgba(47, 52, 56, 0.14) inset;
+  -moz-box-shadow: 0px 0px 5px 6px rgba(47, 52, 56, 0.14) inset;
+  box-shadow: 0px 0px 5px 6px rgba(47, 52, 56, 0.14) inset;
+}
+
+.input_safe{
+  width: 60%;
+  height: 60%;
+  border: 3px solid silver;
+  border-radius: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #554A4A;
+
+
+}
+
+
+.form_input_safe{
+display: flex;
+flex-flow: column;
+align-items: center;
+}
+.form_input_safe label{
+  font-family: 'Stalinist One', cursive;
+}
+
+.form_input_safe button {
+  text-decoration:none;
+  padding: 5px;
+  border: 1px ;
+  margin-right: 10px;
+  border-radius: 5%;
+  background: #749385;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+footer{
+
+    bottom: 0;
+    left: 0;
+     position: relative;
+    height: 10px;
+    width: 100%;
+    border-top: 1px solid silver;
+}
+.safe_inside_white{
+  width: 85%;
+  height: 85%;
+  background: white;
+
+
+  border-radius: 2%;
+  border: 3px solid silver;
+  -webkit-box-shadow: 0px 0px 5px 6px rgba(47, 52, 56, 0.14) inset;
+  -moz-box-shadow: 0px 0px 5px 6px rgba(47, 52, 56, 0.14) inset;
+  box-shadow: 0px 0px 5px 6px rgba(47, 52, 56, 0.14) inset;
+}
+.profile{
+  align-items: center;
+  height: 80% ;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form_profile{
+  border: 3px solid silver;
+  padding: 10px;
+  border-radius: 2%;
+}
+
+
+.form_input_safe_open{
+  font-family: 'Stalinist One', cursive;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+}
+.links{
+    background: red;
+    text-align: center;
+}
+input[type=text] , input[type=password],input[type=email] {
+    width:200px;
+    border-radius: 2%;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #e3e3e3;
+    border:2px solid #bcffed;
+}
+input[type=text]:hover {
+    transition: 3s;
+    background: #bcffed;
+}
+input[type=password]:hover {
+    transition: 2s;
+    background: #bcffed;
+}
+input[type=email]:hover {
+    transition: 2s;
+    background: #bcffed;
+}
+
+.form_input_safe {
+    padding: 10px;
+}
+
+.form_reg {
+    width: 600px ;
+    height: 100% ;
+    text-align: center;
+
+}
+
+
+.form_reg:hover {
+    border: 1px solid black;
+    border-radius: 2%;
+    background:white;
+    transition: 2s;
+    -webkit-box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.17);
+    -moz-box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.17);
+    box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.17);
+
+}
+.form_prof {
+
+  width: 300px ;
+  height: 90% ;
+  text-align: center;
+
+}
+.form_prof:hover {
+    border: 1px solid black;
+    border-radius: 2%;
+    background:white;
+    transition: 2s;
+    -webkit-box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.17);
+    -moz-box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.17);
+    box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.17);
+}
+.errorlist{
+    color: red;
+    align-text: color;
+
+}
+
+.a_button_link {
+  text-decoration:none;
+  margin-top : 10px ;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  border-bottom: 10px solid #EDEFEE;
+  font-family: 'Stalinist One', cursive;
+}
+
+.a_button_link:hover{
+    transition: 0.5s;
+    color: #749385;
+}
+
+
+.a_link {
+    width: 100%;
+    text-align: center;
+}

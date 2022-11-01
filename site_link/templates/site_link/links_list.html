@@ -1,0 +1,48 @@
+{% extends 'site_link/base.html' %}
+
+{%block content%}
+{%if  user.is_authenticated%}
+<div class="safe">
+    <div class="safe_inside_white">
+        <form method="post"  class="form_input_safe_open">
+            {%csrf_token%}
+            {{form}}
+            <button class="a_button" type="submit"> Добавить </button>
+        </form>
+
+            {% for link in links%}
+                <a href="{{link.link}}" target="_blank" class="a_link"> <p class="a_button_link" >  Ссылка- link/{{link.slug}}</p>
+                <form  method="POST" action="{% url 'delete' pk=link.pk %}">
+                {% csrf_token %}
+                <button type="submit" class="a_button">Delete</button>
+                </form>
+                </a>
+
+
+            {%endfor%}
+            <div style="text-align: center;">
+            {% if is_paginated %}
+
+                {% if page_obj.has_previous %}
+                  <a href="?page={{ page_obj.previous_page_number }}" class="a_button">Предыдущая страница</a>
+                {% endif %}
+                {% if page_obj.has_next %}
+                  <a href="?page={{ page_obj.next_page_number }}" class="a_button">Следующая страница</a>
+
+                {% endif %}
+            {% endif %}
+            </div>
+
+    </div>
+</div>
+{%else%}
+<div class="safe">
+    <div class="safe_inside">
+        <div class="input_safe">
+            <a href="{% url 'index' %}" class="a_button">Войти</a>
+        </div>
+    </div>
+</div>
+{%endif%}
+
+{%endblock%}

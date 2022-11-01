@@ -1,0 +1,24 @@
+{%extends 'site_link/base.html'%}
+
+{% block content %}
+<div class="safe ">
+    <div class="safe_inside">
+      <div class="form_prof">
+        <form method="post"  class="form_input_safe label form_input_safe button ">
+             {% csrf_token %}
+            <h3>Настройки профиля </h3>
+            <strong>@{{user.username}}</strong>
+            {%if user.email%}
+            <b >Email: </b>{{user.email}}
+            {%endif%}
+
+            {{updateUserForm.as_p}}
+            <span> {{profileForm.img}}</span>
+            <button class="a_button" type="submit"> Обновить </button>
+            <a href="{% url 'index' %}" class="a_button">Войти</a>
+
+        </form>
+      </div>
+    </div>
+</div>
+{% endblock content %}
