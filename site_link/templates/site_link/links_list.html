@@ -14,7 +14,7 @@
                 <a href="{{link.link}}" target="_blank" class="a_link"> <p class="a_button_link" >  Ссылка- link/{{link.slug}}</p>
                 <form  method="POST" action="{% url 'delete' pk=link.pk %}">
                 {% csrf_token %}
-                <button type="submit" class="a_button">Delete</button>
+                <button type="submit" class="a_button">Удалить</button>
                 </form>
                 </a>
 
