@@ -28,7 +28,6 @@ class LinkView(ListView):
             return context
 
     def post(self, request, *args, **kwargs):
-
         if request.method == 'POST':
             form = LinksForm(request.POST)
             if form.is_valid():
